@@ -186,7 +186,7 @@ export default function App() {
             <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
             <span className={`toggle-pill ${theme}`}><span className="toggle-knob" /></span>
           </button>
-          <a className="btn small ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn small ghost" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </header>
 
@@ -198,7 +198,7 @@ export default function App() {
           <p className="lede">SiHemat is a Flutter-powered command center for LEN's electric motorbikes — live GPS, route replay, safety telemetry, and compliance, unified in one mobile app.</p>
           <div className="badges">{BADGES.map((b) => <span key={b} className="badge">{b}</span>)}</div>
           <div className="cta-row">
-            <a className="btn primary" href="https://github.com" target="_blank" rel="noreferrer">⌨ View GitHub</a>
+            <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">⌨ View GitHub</a>
             <a className="btn ghost" href="#features">▶ Live Demo</a>
           </div>
           <div className="hero-mini">
@@ -301,7 +301,7 @@ export default function App() {
         <h2>Ready for Indonesia's <span className="accent">EV ecosystem.</span></h2>
         <p>SiHemat proves a state-owned fleet can go electric — and stay observable, compliant, and safe. Built as a mobile-developer case study for PT Len Industri (Persero).</p>
         <div className="cta-row center">
-          <a className="btn primary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repository</a>
+          <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">GitHub Repository</a>
           <a className="btn ghost" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn Profile</a>
         </div>
         <div className="credits"><span>Designed & engineered by <strong>Nirwan Rasyid Ridlo</strong> — Mobile Developer (Flutter)</span><span className="mono">Flutter · Dart · Google Maps · Firebase</span></div>
