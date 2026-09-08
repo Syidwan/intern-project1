@@ -302,7 +302,7 @@ export default function App() {
         <p>SiHemat proves a state-owned fleet can go electric — and stay observable, compliant, and safe. Built as a mobile-developer case study for PT Len Industri (Persero).</p>
         <div className="cta-row center">
           <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">GitHub Repository</a>
-          <a className="btn ghost" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a className="btn ghost" href="https://www.linkedin.com/in/nirwan-rasyid-88b97a233/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
         </div>
         <div className="credits"><span>Designed & engineered by <strong>Nirwan Rasyid Ridlo</strong> — Mobile Developer (Flutter)</span><span className="mono">Flutter · Dart · Google Maps · Firebase</span></div>
       </footer>
