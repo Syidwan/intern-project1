@@ -247,6 +247,16 @@ body {
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* Font Awesome icon spacing + theming (icons inherit currentColor) */
+.btn i { margin-right: 2px; }
+.theme-toggle i { font-size: 15px; }
+.ctx h3 i { margin-right: 8px; }
+.ctx.problem h3 i { color: #f59e0b; }
+.ctx.solution h3 i { color: var(--accent); }
+.spot-copy li i { color: var(--accent); margin-right: 6px; }
+.quality-strip i { margin-right: 6px; color: var(--accent); }
+.float-card i { margin-right: 6px; color: var(--accent); }
+
 /* Brand logo + gallery */
 .brand-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: #fff; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 26px; }

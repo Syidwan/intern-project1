@@ -51,11 +51,7 @@ function useCountUp(target, active, duration = 1400) {
 }
 
 function ThemeIcon({ theme }) {
-  return theme === 'dark' ? (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
-  ) : (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
-  )
+  return <i className={theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon'} aria-hidden="true" />
 }
 
 /* ---------- Phone mockups (REAL APP SCREENSHOTS from /assets/) ---------- */
@@ -186,7 +182,7 @@ export default function App() {
             <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
             <span className={`toggle-pill ${theme}`}><span className="toggle-knob" /></span>
           </button>
-          <a className="btn small ghost" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn small ghost" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
         </div>
       </header>
 
@@ -198,8 +194,8 @@ export default function App() {
           <p className="lede">SiHemat is a Flutter-powered command center for LEN's electric motorbikes — live GPS, route replay, safety telemetry, and compliance, unified in one mobile app.</p>
           <div className="badges">{BADGES.map((b) => <span key={b} className="badge">{b}</span>)}</div>
           <div className="cta-row">
-            <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">⌨ View GitHub</a>
-            <a className="btn ghost" href="#features">▶ Live Demo</a>
+            <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" aria-hidden="true"></i>View GitHub</a>
+            <a className="btn ghost" href="#features"><i className="fa-solid fa-circle-play" aria-hidden="true"></i>Live Demo</a>
           </div>
           <div className="hero-mini">
             <div><strong>12+</strong><span>units tracked</span></div>
@@ -210,8 +206,8 @@ export default function App() {
         <div className="hero-phone reveal visible">
           <div className="phone-glow" />
           <HeroPhone />
-          <div className="float-card fc1 glass">📍 LEN-EV 042 · moving 42 km/h</div>
-          <div className="float-card fc2 glass">🔋 Fleet health 94%</div>
+          <div className="float-card fc1 glass"><i className="fa-solid fa-location-dot" aria-hidden="true"></i>LEN-EV 042 · moving 42 km/h</div>
+          <div className="float-card fc2 glass"><i className="fa-solid fa-battery-three-quarters" aria-hidden="true"></i>Fleet health 94%</div>
         </div>
       </section>
 
@@ -224,7 +220,7 @@ export default function App() {
         <p className="sub reveal">PT Len runs a growing pool of electric motorbikes for operations — but spreadsheets and word-of-mouth can't track moving assets.</p>
         <div className="context-grid">
           <div className="ctx glass reveal problem">
-            <h3>⚠ The Challenge</h3>
+            <h3><i className="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>The Challenge</h3>
             <ul>
               <li><strong>Blind fleet:</strong> no live position for corporate dispatch — units go missing for hours.</li>
               <li><strong>No trip history:</strong> incidents and route deviations can't be audited or replayed.</li>
@@ -234,7 +230,7 @@ export default function App() {
             </ul>
           </div>
           <div className="ctx glass reveal solution">
-            <h3>⚡ The SiHemat Solution</h3>
+            <h3><i className="fa-solid fa-bolt" aria-hidden="true"></i>The SiHemat Solution</h3>
             <ul>
               <li><strong>Live command map:</strong> every bike streams GPS to one realtime Flutter + Google Maps view.</li>
               <li><strong>Replayable truth:</strong> animated route playback turns any trip into reviewable evidence.</li>
@@ -259,7 +255,7 @@ export default function App() {
                 <span className="spot-tag">{f.tag}</span>
                 <h3>{f.title}</h3>
                 <p>{f.desc}</p>
-                <ul>{f.points.map((p) => <li key={p}>✓ {p}</li>)}</ul>
+                <ul>{f.points.map((p) => <li key={p}><i className="fa-solid fa-check" aria-hidden="true"></i>{p}</li>)}</ul>
               </div>
             </article>
           ))}
@@ -292,7 +288,7 @@ export default function App() {
           <Metric value={7} suffix="" label="Test Modules" sub="Map, auth, speedo, garage, PDF, replay, compliance." active={metricsActive} />
           <RamMetric active={metricsActive} />
         </div>
-        <div className="quality-strip glass reveal"><span>🧪 Black-Box methodology</span><span>📦 7 modules</span><span>✅ 0 critical defects</span><span>📱 Low-end friendly</span></div>
+        <div className="quality-strip glass reveal"><span><i className="fa-solid fa-vial" aria-hidden="true"></i>Black-Box methodology</span><span><i className="fa-solid fa-box" aria-hidden="true"></i>7 modules</span><span><i className="fa-solid fa-circle-check" aria-hidden="true"></i>0 critical defects</span><span><i className="fa-solid fa-mobile-screen" aria-hidden="true"></i>Low-end friendly</span></div>
       </section>
 
       {/* Footer */}
@@ -301,8 +297,8 @@ export default function App() {
         <h2>Ready for Indonesia's <span className="accent">EV ecosystem.</span></h2>
         <p>SiHemat proves a state-owned fleet can go electric — and stay observable, compliant, and safe. Built as a mobile-developer case study for PT Len Industri (Persero).</p>
         <div className="cta-row center">
-          <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer">GitHub Repository</a>
-          <a className="btn ghost" href="https://www.linkedin.com/in/nirwan-rasyid-88b97a233/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a className="btn primary" href="https://github.com/Syidwan/Sihemat-v3" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" aria-hidden="true"></i>GitHub Repository</a>
+          <a className="btn ghost" href="https://www.linkedin.com/in/nirwan-rasyid-88b97a233/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn Profile</a>
         </div>
         <div className="credits"><span>Designed & engineered by <strong>Nirwan Rasyid Ridlo</strong> — Mobile Developer (Flutter)</span><span className="mono">Flutter · Dart · Google Maps · Firebase</span></div>
       </footer>
